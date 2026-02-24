@@ -10,8 +10,8 @@ public class ThreadsSync {
 //        Thread t2 = new Thread(new Thread2(m));
 //        t1.start();
 //        t2.start();
-        Thread1 t1Sync = new Thread1(m);
-        Thread t2Sync = new Thread(new Thread2(m));
+        ThreadT1 t1Sync = new ThreadT1(m);
+        Thread t2Sync = new Thread(new ThreadT2(m));
         t1Sync.start();
         t2Sync.start();
 
@@ -69,11 +69,11 @@ class MathUtils {
 
 }
 
-class Thread1 extends Thread {
+class ThreadT1 extends Thread {
 
     MathUtils mu;
 
-    Thread1(MathUtils mu) {
+    ThreadT1(MathUtils mu) {
         this.mu = mu;
     }
 
@@ -88,11 +88,11 @@ class Thread1 extends Thread {
 
 }
 
-class Thread2 implements Runnable {
+class ThreadT2 implements Runnable {
 
     MathUtils mu;
 
-    Thread2(MathUtils mu) {
+    ThreadT2(MathUtils mu) {
         this.mu = mu;
     }
 

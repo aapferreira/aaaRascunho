@@ -12,7 +12,7 @@ public class ArquivoEscrevendoLendoComSerializacao {
 
     public static void main(String[] args) {
 
-        Aluno a = new Aluno("aaaaa", new BigDecimal(BigInteger.ONE));
+        AlunoAELCS a = new AlunoAELCS("aaaaa", new BigDecimal(BigInteger.ONE));
 
         String filename = "/home/apferreira/Desktop/teste.txt";
 
@@ -40,7 +40,7 @@ public class ArquivoEscrevendoLendoComSerializacao {
             fileIn = new FileInputStream(filename);
             objIn = new ObjectInputStream(fileIn);
 
-            Aluno b = (Aluno) objIn.readObject();
+            AlunoAELCS b = (AlunoAELCS) objIn.readObject();
 
             System.out.println(b);
 
@@ -69,12 +69,12 @@ public class ArquivoEscrevendoLendoComSerializacao {
 
 }
 
-class HashTableTest<K, V> {
+class HashTableTestAELCS<K, V> {
 
     private K key;
     private V value;
 
-    public HashTableTest(K key, V value) {
+    public HashTableTestAELCS(K key, V value) {
         this.key = key;
         this.value = value;
     }
@@ -86,12 +86,12 @@ class HashTableTest<K, V> {
 
 }
 
-class Aluno implements Serializable {
+class AlunoAELCS implements Serializable {
 
     private String nome;
     private BigDecimal nota;
 
-    public Aluno(String nome, BigDecimal nota) {
+    public AlunoAELCS(String nome, BigDecimal nota) {
         this.nome = nome;
         this.nota = nota;
     }
@@ -119,14 +119,14 @@ class Aluno implements Serializable {
 
 }
 
-class Produto {
+class ProdutoAELCS {
 
     private String nome;
     private Double preco;
     private Double desconto;
     private Double frete;
 
-    public Produto(String nome, Double preco, Double desconto, Double frete) {
+    public ProdutoAELCS(String nome, Double preco, Double desconto, Double frete) {
         this.nome = nome;
         this.preco = preco;
         this.desconto = desconto;

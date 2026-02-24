@@ -3,21 +3,29 @@ package com.mycompany.aaarascunho;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class aaaRascunho {
     
-    //1. B, 2. B, 3. B, 4. B, 5. B, 6. B, 7. B, 8. B, 9. B, 10. C, 11. B, 12. A. 13. B, 14. B, 15. B, 16. B, 17. ?, 18. B, 19. B, 20. B
-    //1. B, 2. B, 3. B, 4. B, 5. B, 6. B, 7. B, 8. B, 9. B, 10. C, 11. B, 12. A, 13. B, 14. B, 15. B, 16. B, 17. B, 18. B, 19. B, 20. B
+    public static HashMap documentosProblematicos = new HashMap();
+    
+    //1. B, 2. A, 3. C, 4. A, 5. A, 6. C, 7. B, 8. B, 9. B, 10. A, 11. C, 12. ?, 13. C, 14. A, 15. B, 16. C, 17. A, 18. ?, 19. ?, 20. B
+    //1. B, 2. A, 3. C, 4. A, 5. B, 6. C, 7. B, 8. B, 9. B, 10. A, 11. C, 12. B, 13. C, 14. A, 15. B, 16. C, 17. A, 18. A, 19. C, 20. B
 
     public static void main(String[] args) {
 
-        List<Integer> numeros = Arrays.asList(1, 2, 3, 4);
-
-        System.out.println(sum(numeros));
-
+        String documento = "00064569004008";
+        
+        if ("00074569004008".equals(documento)) {
+            System.out.println("Documento igual a 00074569004008");
+        }
+        
     }
 
+    public aaaRascunho() {
+    }
+    
     public static <T extends Number> Double sum(List<T> itens) {
 
         Double resultado = 0.0;
@@ -45,12 +53,12 @@ public class aaaRascunho {
 
 }
 
-class HashTableTest<K, V> {
+class HashTableTest1<K, V> {
 
     private K key;
     private V value;
 
-    public HashTableTest(K key, V value) {
+    public HashTableTest1(K key, V value) {
         this.key = key;
         this.value = value;
     }
@@ -62,12 +70,12 @@ class HashTableTest<K, V> {
 
 }
 
-class Aluno implements Serializable {
+class AlunoR implements Serializable {
 
     private String nome;
     private BigDecimal nota;
 
-    public Aluno(String nome, BigDecimal nota) {
+    public AlunoR(String nome, BigDecimal nota) {
         this.nome = nome;
         this.nota = nota;
     }
@@ -95,14 +103,14 @@ class Aluno implements Serializable {
 
 }
 
-class Produto {
+class Produto1 {
 
     private String nome;
     private Double preco;
     private Double desconto;
     private Double frete;
 
-    public Produto(String nome, Double preco, Double desconto, Double frete) {
+    public Produto1(String nome, Double preco, Double desconto, Double frete) {
         this.nome = nome;
         this.preco = preco;
         this.desconto = desconto;
