@@ -5,27 +5,28 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import org.apache.commons.codec.digest.DigestUtils;
 
 public class aaaRascunho {
-    
+
     public static HashMap documentosProblematicos = new HashMap();
+
+    // 1. A, 2. B, 3. D, 4. A, 5. C, 6. B, 7. ?, 8. A, 9. B, 10. B, 11. B, 12. A, 13. C, 14. B, 15. ?, 16. B, 17. ?, 18. A, 19. B, 20. C
+    // 1. B, 2. B, 3. B, 4. C, 5. C, 6. C, 7. B, 8. A, 9. B, 10. B, 11. B, 12. A, 13. C, 14. B, 15. B, 16. B, 17. C, 18. B, 19. B, 20. B
     
-    //1. B, 2. A, 3. C, 4. A, 5. A, 6. C, 7. B, 8. B, 9. B, 10. A, 11. C, 12. ?, 13. C, 14. A, 15. B, 16. C, 17. A, 18. ?, 19. ?, 20. B
-    //1. B, 2. A, 3. C, 4. A, 5. B, 6. C, 7. B, 8. B, 9. B, 10. A, 11. C, 12. B, 13. C, 14. A, 15. B, 16. C, 17. A, 18. A, 19. C, 20. B
-
     public static void main(String[] args) {
+        
+        System.out.println(2_000_000 * 0.005);
 
-        String documento = "00064569004008";
-        
-        if ("00074569004008".equals(documento)) {
-            System.out.println("Documento igual a 00074569004008");
-        }
-        
+    }
+
+    public static String geraToken(String s) {
+        return DigestUtils.md5Hex(DigestUtils.md5Hex(s)) + DigestUtils.md5Hex(DigestUtils.md5Hex(s));
     }
 
     public aaaRascunho() {
     }
-    
+
     public static <T extends Number> Double sum(List<T> itens) {
 
         Double resultado = 0.0;
