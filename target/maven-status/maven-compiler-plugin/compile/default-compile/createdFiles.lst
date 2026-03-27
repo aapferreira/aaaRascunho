@@ -6,6 +6,7 @@ com/mycompany/aaarascunho/Person.class
 com/mycompany/aaarascunho/Threads.class
 com/mycompany/aaarascunho/AlunoAELCS.class
 com/mycompany/aaarascunho/Day2.class
+com/mycompany/aaarascunho/ImageHandlingDemo.class
 com/mycompany/aaarascunho/ThreadT1.class
 com/mycompany/aaarascunho/Produto1.class
 com/mycompany/aaarascunho/ArquivoEscrevendoLendoComSerializacao.class
@@ -16,6 +17,7 @@ com/mycompany/aaarascunho/Thread1.class
 com/mycompany/aaarascunho/Day.class
 com/mycompany/aaarascunho/HashTableTest.class
 com/mycompany/aaarascunho/Enumeration.class
+com/mycompany/aaarascunho/FutureDemo.class
 com/mycompany/aaarascunho/ThreadT2.class
 com/mycompany/aaarascunho/Aluno.class
 com/mycompany/aaarascunho/ProdutoAELCS.class
@@ -23,6 +25,9 @@ com/mycompany/aaarascunho/Bucket.class
 com/mycompany/aaarascunho/MathUtils.class
 com/mycompany/aaarascunho/Produto.class
 com/mycompany/aaarascunho/FileInputOutputStream.class
+com/mycompany/aaarascunho/NetworkingDemo.class
 com/mycompany/aaarascunho/Lambdas.class
+com/mycompany/aaarascunho/FutureDemo2.class
 com/mycompany/aaarascunho/Usuario.class
 com/mycompany/aaarascunho/Thread2.class
+com/mycompany/aaarascunho/RegexDemo.class

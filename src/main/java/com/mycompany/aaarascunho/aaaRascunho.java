@@ -8,16 +8,22 @@ import java.util.List;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class aaaRascunho {
-
+    
     public static HashMap documentosProblematicos = new HashMap();
-
+    
     // 1. A, 2. B, 3. D, 4. A, 5. C, 6. B, 7. ?, 8. A, 9. B, 10. B, 11. B, 12. A, 13. C, 14. B, 15. ?, 16. B, 17. ?, 18. A, 19. B, 20. C
     // 1. B, 2. B, 3. B, 4. C, 5. C, 6. C, 7. B, 8. A, 9. B, 10. B, 11. B, 12. A, 13. C, 14. B, 15. B, 16. B, 17. C, 18. B, 19. B, 20. B
     
     public static void main(String[] args) {
         
-        System.out.println(2_000_000 * 0.005);
-
+        System.out.println(0.032 * 0.32);
+        
+        String leituraLinha = "2      433112022062921341202206292134000000000000000000000000001                                                                                                                                                                                                                                                                                                                                                                                                                                                               000";
+        
+        System.out.println(leituraLinha.substring(11,12).trim());
+        System.out.println(leituraLinha.substring(37,38).trim());
+        System.out.println(leituraLinha.substring(511, 514));
+        
     }
 
     public static String geraToken(String s) {
@@ -141,7 +147,7 @@ class Produto1 {
     public void setDesconto(Double desconto) {
         this.desconto = desconto;
     }
-
+    
     public Double getFrete() {
         return frete;
     }
